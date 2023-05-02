@@ -1,0 +1,78 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "nombre": "Spiderman",
+      "alterego": "Peter Parker",
+      "debilidades": "Ninguna",
+      "humano": true,
+      "superpoder": [
+        "Fuerza",
+        "Agilidad"
+      ],
+      "sexo": "Hombre"
+    },
+    {
+      "id": 2,
+      "nombre": "Superman",
+      "alterego": "Clark Kent",
+      "sexo": "Hombre",
+      "superpoder": [
+        "Fuerza",
+        "Velocidad",
+        "Vuelo",
+        "Rayos laser"
+      ],
+      "debilidades": "Kryptonita",
+      "humano": false
+    },
+    {
+      "id": 3,
+      "nombre": "Wonder Woman",
+      "alterego": "Diana",
+      "sexo": "Mujer",
+      "superpoder": [
+        "Fuerza",
+        "Velocidad"
+      ],
+      "debilidades": "Ninguna",
+      "humano": true
+    },
+    {
+      "id": 4,
+      "nombre": "Wonder Woman",
+      "alterego": "Diana",
+      "sexo": "Mujer",
+      "superpoder": [
+        "Fuerza",
+        "Velocidad"
+      ],
+      "debilidades": "Ninguna",
+      "humano": true
+    },
+    {
+      "id": 5,
+      "nombre": "Wonder Woman",
+      "alterego": "Diana",
+      "sexo": "Mujer",
+      "superpoder": [
+        "Fuerza",
+        "Velocidad"
+      ],
+      "debilidades": "Ninguna",
+      "humano": true
+    },
+    {
+      "id": 6,
+      "nombre": "Wonder Woman",
+      "alterego": "Diana",
+      "sexo": "Mujer",
+      "superpoder": [
+        "Fuerza",
+        "Velocidad"
+      ],
+      "debilidades": "Ninguna",
+      "humano": true
+    }
+  ]
+}

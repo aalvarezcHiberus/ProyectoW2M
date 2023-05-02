@@ -1,0 +1,60 @@
+<div class="container-fluid m-3">
+  <h1>{{title | translate}}</h1>
+  <form [formGroup]="heroForm">
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="custom-width">
+          <mat-label>{{'HERO_FORM.FORM.NAME' | translate}}</mat-label>
+          <input matInput #inputName appUppercase maxlength="15" formControlName="name">
+          <mat-hint align="end">{{inputName.value.length}}/15</mat-hint>
+          <mat-error *ngIf="this.heroForm.get('name')?.invalid">{{getErrorMessage() | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="custom-width">
+          <mat-label>{{'HERO_FORM.FORM.ALTEREGO' | translate}}</mat-label>
+          <input matInput formControlName="alterEgo">
+          <mat-error *ngIf="this.heroForm.get('alterEgo')?.invalid">{{getErrorMessage() | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="custom-width" appearance="fill">
+          <mat-label>{{'HERO_FORM.FORM.SEX' | translate}}</mat-label>
+          <mat-select formControlName="sex">
+            <mat-option value="Hombre">{{'HERO_FORM.FORM.MAN' | translate}}</mat-option>
+            <mat-option value="Mujer">{{'HERO_FORM.FORM.WOMAN' | translate}}</mat-option>
+            <mat-option value="">-</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-error *ngIf="!this.heroForm.get('sex')?.value && !this.heroForm.get('human')?.value">
+          {{'HERO_FORM.FORM.CHECK_FIELDS' | translate}}</mat-error>
+      </div>
+      <div class="col">
+        <mat-form-field class="custom-width">
+          <mat-label>{{'HERO_FORM.FORM.POWER' | translate}}</mat-label>
+          <mat-select formControlName="power" multiple>
+            <mat-option *ngFor="let poder of superpoder" [value]="poder.value">{{poder.key}}</mat-option>
+          </mat-select>
+          <mat-error *ngIf="this.heroForm.get('power')?.invalid">{{getErrorMessage() | translate}}</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="custom-width">
+          <mat-label>{{'HERO_FORM.FORM.WEAKNESS' | translate}}</mat-label>
+          <input matInput formControlName="weakness">
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-checkbox formControlName="human">{{'HERO_FORM.FORM.HUMAN' | translate}}</mat-checkbox>
+        <mat-error *ngIf="!this.heroForm.get('sex')?.value && !this.heroForm.get('human')?.value">
+          {{'HERO_FORM.FORM.CHECK_FIELDS' | translate}}</mat-error>
+      </div>
+    </div>
+    <button mat-raised-button (click)="onSubmit()" [disabled]="!heroForm.valid">Guardar</button>
+    <button mat-raised-button class="mx-3" (click)="goBack()">{{'HERO_FORM.RETURN' | translate}}</button>
+  </form>
+</div>

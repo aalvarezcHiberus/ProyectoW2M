@@ -1,0 +1,69 @@
+{
+    "SEARCH": "Buscar",
+    "SEARCH_CARD": {
+        "TITLE": "Búsqueda por campos",
+        "SEARCH_ID": "Buscar por id",
+        "SEARCH_NAME": "Buscar por nombre",
+        "HERO_ID": "Id del héroe",
+        "HERO_NAME": "Nombre del héroe"
+    },
+    "HERO_LIST": {
+        "TITLE_FILTER": "Búsqueda general en la tabla",
+        "FILTER": "Filtro",
+        "SEARCH_ALL": "Buscar todos",
+        "ADD_HERO": "Añadir héroe",
+        "SEARCH": "Búsqueda",
+        "DELETE_SUCCESS": "Héroe borrado con éxito",
+        "PROBLEM": "Problema borrando héroe",
+        "COLUMNS": {
+            "NUM": "No.",
+            "NAME": "Nombre",
+            "ALTEREGO": "Alter ego",
+            "HUMAN": "Humano",
+            "ACTIONS": "Acciones"
+        } 
+    },
+    "HERO_FORM": {
+        "TITLE_NEW": "Modificación de héroe",
+        "TITLE_UPDATE": "Creación de héroe",
+        "SAVE": "Guardar",
+        "RETURN": "Volver",
+        "UPDATE_SUCCESS": "Héroe actualizado correctamente",
+        "UPDATE_ERROR": "Error actualizando",
+        "ADD_SUCCESS": "Héroe añadido correctamente",
+        "ADD_ERROR": "Error añadiendo",
+        "FORM": {
+            "NAME": "Nombre del héroe",
+            "ALTEREGO": "Alter ego",
+            "SEX": "Sexo",
+            "MAN": "Hombre",
+            "WOMAN": "Mujer",
+            "POWER": "Superpoder",
+            "WEAKNESS": "Debilidad",
+            "HUMAN": "Humano",
+            "CHECK_FIELDS": "Introduzca uno de estos campos",
+            "MIN_LENGTH": "Mínimo de 4 caracteres",
+            "REQUIRED": "Campo requerido"
+        } 
+    },
+    "CONFIRM_DIALOG": {
+        "SURE": "¿Está seguro?",
+        "NOT_UNDO": "Esta acción no se puede deshacer",
+        "DELETE": "Borrar",
+        "CANCEL": "Cancelar"
+    },
+    "DETAIL_DIALOG": {
+        "TITLE": "Detalles del héroe",
+        "CLOSE": "Cerrar",
+        "YES": "Sí",
+        "NO": "No",
+        "FORM": {
+           "NAME": "Nombre del héroe",
+           "ALTEREGO":"Alter ego",
+           "SEX":"Sexo",
+           "POWER":"Superpoder",
+           "WEAKNESS":"Debilidad",
+           "HUMAN":"Humano"
+        }
+    }
+}

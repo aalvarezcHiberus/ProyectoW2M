@@ -1,0 +1,48 @@
+<h2 mat-dialog-title>{{'DETAIL_DIALOG.TITLE' | translate}}</h2>
+<mat-dialog-content>
+    <div class="row">
+        <div class="col">
+          <mat-form-field class="custom-width">
+              <mat-label>{{'DETAIL_DIALOG.FORM.NAME' | translate}}</mat-label>
+              <input matInput disabled="true" [value]="data.nombre">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field class="custom-width">
+                <mat-label>{{'DETAIL_DIALOG.FORM.ALTEREGO' | translate}}</mat-label>
+                <input matInput disabled="true" [value]="data.alterego">
+              </mat-form-field>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col">
+          <mat-form-field class="custom-width">
+              <mat-label>{{'DETAIL_DIALOG.FORM.SEX' | translate}}</mat-label>
+              <input matInput disabled="true" [value]="data.sexo">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field class="custom-width">
+                <mat-label>{{'DETAIL_DIALOG.FORM.POWER' | translate}}</mat-label>
+                <input matInput disabled="true" [value]="data.superpoder.toString()">
+              </mat-form-field>
+        </div>
+      </div>
+    <div class="row">
+        <div class="col">
+          <mat-form-field class="custom-width">
+              <mat-label>{{'DETAIL_DIALOG.FORM.WEAKNESS' | translate}}</mat-label>
+              <input matInput disabled="true" [value]="data.debilidades?.toString()">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field class="custom-width">
+                <mat-label>{{'DETAIL_DIALOG.FORM.HUMAN' | translate}}</mat-label>
+                <input matInput disabled="true" [value]="(data.humano ? 'DETAIL_DIALOG.YES': 'DETAIL_DIALOG.NO') | translate">
+              </mat-form-field>
+        </div>
+      </div>
+</mat-dialog-content>
+<mat-dialog-actions class="justify-content-end">
+  <button mat-button mat-dialog-close>{{'DETAIL_DIALOG.CLOSE' | translate}}</button>
+</mat-dialog-actions>
